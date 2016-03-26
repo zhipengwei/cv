@@ -1,0 +1,291 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+%\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{txfonts}
+% adjust the page margins
+\usepackage[scale=0.83]{geometry}
+\usepackage{url}
+\usepackage{hyperref}
+
+%\usepackage{indentfirst}
+%\setlength{\hintscolumnwidth}{2.5cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+%\vspace{-0.9cm}
+%\firstname{\Huge{\textbf{Zhipeng}}}
+%\familyname{\Huge{\textbf{Wei}}}
+\firstname{{\textbf{Zhipeng}}}
+\familyname{{\textbf{Wei}}}
+\title{\normalsize{2012, Gorman Street, Raleigh, NC, 27606}}               % optional, remove the line if not wanted
+\mobile{+1~984~500~8855}                     % optional, remove the line if not wanted
+\email{zwei5@ncsu.edu}                          % optional, remove the line if not wanted
+%\homepage{http://zhipengwei.github.io}                    % optional, remove the line if not wanted
+\begin{document}
+\maketitle
+
+
+%\homepage{http://www.linkedin.com/profile/view\?id=58551765\&trk=tab_pro}
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with multiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+%\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%\maketitle
+\vspace{-0.9cm}
+\section{Target Position}
+C related development - summer intern
+
+\section{Education}
+\cventry{09/2015 -- Present}{Ph.D. Candidate}{North Carolina State University}{Raleigh, U.S.}{}{} 
+\cventry{09/2012 -- 06/2015}{Master of Science, Computer Architecture}{University of Chinese Academy of Sciences}{Beijing, China}{}{}
+\cventry{09/2008 -- 06/2012}{Bachelor of Engineering, Computer Science and Technology}{Huazhong University of Science and Technology}{Wuhan, China}{87.01/100}{}
+
+\section{Projects}
+\vspace{-0.5cm}
+ \cventry{01/2016 -- Now}{\textbf{Anomaly Detection in Climate Datasets}}{\iffalse{Employer}\vspace{0.1cm}\fi}{\iffalse{Raleigh}\fi}{}{}{%
+Related skills: R, data mining;
+% Detailed achievements:%
+%Description: 
+% \begin{itemize}
+%	\item 
+% \end{itemize}}
+\begin{description}
+	\item [Description:] Given the daily temperature and precipitation levels of all locations on the earth, find those days and those locations in which temperature and precipitation is different compared to other days and locations. Once the time periods and zones of aberration have been detected, match them to the available recodrds of climate phenomena as well as each other. Analyze the results for identifying teleconnections linking worldwide climate anomalies.
+	\item [Methods:] Distance-based and neighborhood-based anomaly detection algorithms are used.
+\end{description}
+\vspace{-0.2cm}
+
+ \cventry{10/2015 -- 12/2015}{\textbf{Machine interference problem simulation}}{\iffalse{Employer}\vspace{0.1cm}\fi}{\iffalse{Raleigh}\fi}{}{}{%}
+Related skills: C++, queueing theory;
+ \begin{description}
+	\item [Description:] Use C++ to implement a simulator that simulate a basic machien interference problem. Use different clocks for differnet events. Use a event list to record all the events. When finished, compare the simulating results with the results obtained using queueing theory.
+	\item [Result:] The simulation result is the same with the result obtained using queueing theory. 
+ \end{description}}
+\vspace{-0.2cm}
+
+ \cventry{07/2014 -- 06/2015}{\textbf{User Level Cache Control}}{\iffalse{Employer}\vspace{0.1cm}\fi}{\iffalse{Beijing}\fi}{}{}{%
+% Detailed achievements:%
+Related skills: CPU cache, Linux, C, Shell scripts;
+ \begin{description}
+	\item [Description:] On Intel Sandy Bridge processors, last level cache is divided into cache slices and all physical addresses are distributed across the cache slices using an hash function. With the undocumented hash function existing, it is impossible to implement cache partition based on page coloring. We propose to firstly crack this hash function and then implemented page coloring on Sandy Bridge processors.
+	\item [Methods:] Studied cache replacement policy and the mapping between physical address and cache locations; Cracked the hash function Intel's Sandy Bridge uses to distribute physical addresses across all cache slices; Implement a user level cache library to improve cache performance.
+ \end{description}}
+\vspace{-0.2cm}
+
+\cventry{03/2013 -- 10/2013}{\textbf{Hardware-based Kernel SamePage Merging (KSM) Optimization}}{\iffalse{Employer}\vspace{0.1cm}\fi}{\iffalse{Beijing}\fi}{}{}{%
+Related skills: Linux, memory management, C;
+\begin{description}%
+%	\item [Description] Kernel same-page merging is a kernel a feature that makes it possible for a hypervisor system to share identical memory pages amongst different processes or virtualized guests. Based on the memory reference traces collected using HMTT, a few characteristics can be extracted. Furthermore, all the physical pages can be classified into different categories based on these characteristics. And unlike the current implementation that only two global red black trees are constructed in KSM, one tree is constructed to hold the pages in each category. As a result, the candidate page only need to be compared with the page category that shares the  same characteristics with itself. As a result, futile page comparisons are reduced by 68.5\%.
+	\item [Description:] Kernel same-page merging is a kernel a feature that makes it possible for a hypervisor system to share identical memory pages amongst different processes or virtualized guests. In current implementation, only two global red black trees are constructed in KSM. To reduce page comparison operation times in KSM, based on the memory reference characteristics extracted from traces collected using HMTT, the physical pages are classified into different categories based on these characteristics. One tree is constructed to hold the pages in each category.  In case of comparison, the physical pages only needs to be compared with the pages that share the same characteristics (in the same tree). As a result, the candidate page only need to be compared with the page category that shares the  same characteristics with itself.
+	\item [Methods:] Studied the existing implementation of KSM; Implemented the mechanism to collect information about physical page reference characteristics; Use the memory reference characteristics to classify pages and reduce page comparing rates.
+	\item [Result:] Achieved 68.5\% reduction of futile page comparison.
+ \end{description}
+\vspace{-0.2cm}
+ 
+%\cventry{03/2014 -- 06/2014}{\textbf{HMTT: A Hybrid Memory Trace Toolkit for the Real Systems}}{\iffalse{Employer}\vspace{0.1cm}\fi}{\iffalse{Beijing}\fi}{}{}{%
+%Related skills: modularization, interface design;
+% \begin{description}%
+%	\item [Description:]
+%	 Implemented the mechanism to synchronize time stamp using a semtec cable;
+%	%\item Implemented clock domain crossings and sampling of external source-clocked for reliable operation;
+%	\item Solved clock domain crossing problem and pipeline-related timing errors;
+%	\item Implemented the Linux kernel driver that served as the control interface of the tool;
+% \end{Description}}
+
+% \cventry{2013/03 -- 2013/10}{Research Assistant}{\iffalse{Employer}\fi}{\iffalse{Beijing}\fi}{}{Optimization of Breadth First Search based on FPGA.\newline{}%
+% \cventry{03/2012 -- 05/2012}{\textbf{Optimization of Breadth First Search based on FPGA.}}{\iffalse{Employer}\vspace{0.1cm}\fi}{\iffalse{Beijing}\fi}{}{}{%
+%% \cventry{03/2012 -- 05/2012}{\textbf{Optimization of Breadth First Search.}}{\iffalse{Employer}\vspace{0.1cm}\fi}{\iffalse{Beijing}\fi}{}{}{%
+%% Detailed achievements:%
+% \begin{itemize}%
+%	\item Studied common graph format such as compressed sparse row (CSR);
+%	\item Studied common implementations of breadth first search algorithm;
+%	\item Designed a hierarchical data structure that is adaptive to vector size and sparsity to store sparse vector;
+%	\item Implemented breadth first search based on this data structure and reduced memory access by 20\%;% and "and" operation;
+% \end{itemize}}
+%\vspace{0.1cm}
+
+%% \cventry{2013/03 -- 2013/10}{Research Assistant}{\iffalse{Employer}\fi}{\iffalse{Beijing}\fi}{}{Optimization of Breadth First Search based on FPGA.\newline{}%
+% \cventry{07/2011 -- 09/2011}{\textbf{Smartmontools Development}}{\iffalse{Employer}\vspace{0.1cm}\fi}{\iffalse{Beijing}\fi}{}{}{%
+%% Detailed achievements:%
+% \begin{itemize}%
+%	\item Studied the mechanism of Self-Monitoring, Analysis and Reporting Technology System (SMART);
+%	\item Separated the function of disk testing from the whole package to form an light-weighted disk testing tool.
+% \end{itemize}}
+
+\section{Publications}
+\cvlistitem{\textbf{Zhipeng Wei}, Zehan Cui, Mingyu Chen. Cracking Intel Sandy Bridge Hash function.}
+\cvlistitem{Licheng Chen, \textbf{Zhipeng Wei}, Zehan Cui, Mingyu Chen, Haiyang Pan, Yungang Bao. CMD: classification-based memory deduplication through page access characteristics. In Proceedings of VEE, 2014.}
+
+\section{Honors and Awards}
+\cvitem{2014}{Merit Student, University of Chinese Academy of Sciences;}
+\cvitem{2014}{Third Place at the IET Present around the World Competition held at Institute of Computing Technology, Chinese Academy of Sciences, the Institution of Engineering and Technology;}
+\cvitem{2009}{National Encouragement Scholarship, Ministry of Education of China (awarded to the top 1\% students);}
+\cvitem{2009, 2010, 2011}{Model Student of Academic, Huazhong University of Science and Technology;}
+\cvitem{2008}{Self-Improvement Scholarship, Huazhong University of Science and Technology.}
+
+\section{Teaching Experience}
+\cvline{2015 Fall}{CSC541 Advanced Data Structure}
+\cvline{2016 Spring}{CSC501 Operating System Principles}
+%\section{SKILLS}
+%%\vspace{0.1cm}
+%\cvline{Platforms}{Linux}
+%\cvitem{Programming Language}{C, C++, Shell}
+%\cvitem{Tools}{GDB, Vim, Git}
+%\cvitem{Parallel Programming}{MPI, OpenMP, OpenCL, CUDA, CAL(AMD GPU interface)}
+
+%\section{ACTIVITIES}
+%\cvitem{May 2012}{Teach Assistant, ``Parallel Computer Architecture" class of Dragonstar Project}
+%\cvitem{May 2011}{One of the Best Basketball Shooter of ICT Basketball Game}
+%\cvitem{Sep 2010}{Best Potential Award of the Annual Singing Competition between ICT and Sugon Corp.}
+%\cvitem{Mar 2009}{As a Member of Volunteers to Plant Trees with Institute of Botany, CAS}
+%\cvitem{Dec 2008-Dec 2009}{Vice Minister of Academic Study of Student Union in ICT}
+
+%\section{ACTIVITIES}
+%\begin{itemize}
+%	\item{Host of annual party of Research Center of Advanced Computer System, 2013}
+%	\item{Teaching Assistant, Research Writing Class, 2013}
+%	\item{The class commissary in charge of studies, 2007, 2008}
+%\end{itemize}
+
+
+%\vspace{-0.2cm}
+%\section{ACTIVITIES}
+%	\cvitem{2013}{Host of Annual Party of Research Center for Advanced Computer System}
+%	\cvitem{2013}{Teaching Assistant, Academic Writing Class}
+%	\cvitem{2007 - 2008}{The Class Commissary in Charge of Studies}
+
+
+%\section{HOBBIES}
+%%\vspace{0.1cm}
+%\cvitem{}{Traveling, Running, Playing Pingpong, Guitar}
+%Member of Out Door Association of University of Chinese Academy of Science
+%Guitar
+%reading
+
+%\section{PhD Dissertation}
+%\cvitem{Title}{\emph{Large-Scale Graph Traversal on Multicore Clusters}}
+%\cvitem{Supervisors}{Ninghui Sun, Guangming Tan, Mingyu Chen}
+%%\cvitem{description}{Short thesis abstract}
+
+
+% \section{Experience}
+% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 1;
+% \item Achievement 2, with sub-achievements:
+%   \begin{itemize}%
+%   \item Sub-achievement (a);
+%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%     \begin{itemize}
+%     \item Sub-sub-achievement i;
+%     \item Sub-sub-achievement ii;
+%     \item Sub-sub-achievement iii;
+%     \end{itemize}
+%   \item Sub-achievement (c);
+%   \end{itemize}
+% \item Achievement 3.
+% \end{itemize}}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+% \subsection{Miscellaneous}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+%% \section{Experience}
+%% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+%% Detailed achievements:%
+%% \begin{itemize}%
+%% \item Achievement 1;
+%% \item Achievement 2, with sub-achievements:
+%%   \begin{itemize}%
+%%   \item Sub-achievement (a);
+%%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%%     \begin{itemize}
+%%     \item Sub-sub-achievement i;
+%%     \item Sub-sub-achievement ii;
+%%     \item Sub-sub-achievement iii;
+%%     \end{itemize}
+%%   \item Sub-achievement (c);
+%%   \end{itemize}
+%% \item Achievement 3.
+%% \end{itemize}}
+%% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%% \subsection{Miscellaneous}
+%% \cventry{year--year}{Job title}{Employer}{City}{}{Description}
+%%
+\iffalse
+ \section{Languages}
+ \cvitemwithcomment{Language 1}{Skill level}{Comment}
+ \cvitemwithcomment{Language 2}{Skill level}{Comment}
+ \cvitemwithcomment{Language 3}{Skill level}{Comment}
+\fi
+%%
+\iffalse
+ \section{Computer skills}
+ \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+ \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+ \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\fi
+%%
+%% \section{Interests}
+%% \cvitem{hobby 1}{Description}
+%% \cvitem{hobby 2}{Description}
+%% \cvitem{hobby 3}{Description}
+%%
+%% \section{Extra 1}
+%% \cvlistitem{Item 1}
+%% \cvlistitem{Item 2}
+%% \cvlistitem{Item 3}
+%%
+%% \renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+%%
+%% \section{Extra 2}
+%% \cvlistdoubleitem{Item 1}{Item 4}
+%% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%% \cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%%\nocite{*}
+%%\bibliographystyle{plain}
+%%\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
